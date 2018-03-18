@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg5"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_h"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:src="?android:attr/homeAsUpIndicator" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_text_button"
+            android:text="send help files"
+            android:gravity="center"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"/>
+
+
+    </Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="choose students"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/text_size_text_view_big"/>
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:layout_width="match_parent"
+        android:id="@+id/spinner_student"
+        android:layout_height="50dp"
+
+        android:layout_margin="10dp">
+
+    </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="upload file : "
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:fontFamily="casual"
+        android:textSize="@dimen/text_size_text_view_big"/>
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/upload_file"
+            android:background="@android:drawable/ic_menu_upload"
+            android:paddingRight="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="10dp"
+        android:hint="name file"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_marginRight="10dp"
+        android:id="@+id/file_name"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="send"
+        android:id="@+id/send"
+        android:textSize="@dimen/text_size_text_view_big"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="casual"/>
+</LinearLayout>
+</ScrollView>

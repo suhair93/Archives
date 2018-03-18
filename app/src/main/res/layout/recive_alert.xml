@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg5"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:id="@+id/back"
+            android:src="?android:attr/homeAsUpIndicator" />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="25dp"
+            android:layout_height="@dimen/image_size"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:foregroundGravity="left"
+            android:src="@android:drawable/stat_notify_chat"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:foregroundGravity="left"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:text="alerts from admin"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:focusableInTouchMode="false"
+            android:textSize="@dimen/text_size_text_view_big"
+            android:textColor="@color/white"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+            <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recycleview_alerts"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:scrollbars="vertical"
+                />
+
+
+    </FrameLayout>
+</LinearLayout>

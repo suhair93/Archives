@@ -1,0 +1,53 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_h"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:text=""
+    android:id="@+id/supervisor_username_edit"
+    android:hint=" "
+    android:gravity="center"
+
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_h"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:id="@+id/supervisor_id_edit"
+        android:hint=" "
+        android:inputType="number"
+        android:gravity="center"
+
+        />
+    <EditText
+        android:id="@+id/supervisor_password_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_h"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint=""
+         />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Edit"
+        android:layout_gravity="center"
+        android:id="@+id/btn_Edit_supervisor"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_text_view_big"/>
+</LinearLayout>

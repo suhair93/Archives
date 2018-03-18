@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg5"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_h"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:src="?android:attr/homeAsUpIndicator" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_text_button"
+            android:text="add student in project"
+            android:gravity="center"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"/>
+
+
+    </Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="choose project"
+        android:textStyle="bold"
+        android:textColor="@color/colorStart"
+        android:fontFamily="casual"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/text_size_text_view_big"/>
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:layout_width="match_parent"
+        android:id="@+id/spinner_project"
+        android:layout_height="50dp"
+        app:hintText="chooes"
+        android:layout_margin="10dp">
+
+    </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="student number"
+        android:textColorHint="@color/colorStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="top"
+        android:id="@+id/student_number"
+        android:fontFamily="casual"
+        android:scrollbars="vertical"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="student name"
+        android:textColorHint="@color/colorStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="top"
+        android:id="@+id/student_name"
+        android:fontFamily="casual"
+        android:scrollbars="vertical"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:background="@color/colorStart"
+        android:text="add"
+        android:id="@+id/addStudentBtn"
+        android:textSize="@dimen/text_size_text_view_big"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="casual"/>
+</LinearLayout>
+</ScrollView>

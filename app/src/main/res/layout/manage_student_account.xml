@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg5"
+    android:layout_height="match_parent"
+    class = "com.archives.admin.manage_students"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    >
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:id="@+id/back"
+            android:src="?android:attr/homeAsUpIndicator" />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:foregroundGravity="left"
+            android:src="@android:drawable/ic_menu_manage"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:foregroundGravity="left"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:text="manage students account"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:focusableInTouchMode="false"
+            android:textSize="@dimen/text_size_text_view_big"
+            android:textColor="@color/white"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:id="@+id/search_student_by_admin"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="search in student"
+        android:fontFamily="casual"
+        android:layout_margin="10dp"
+        android:drawableLeft="@android:drawable/ic_search_category_default"
+        />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+            <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recycleview_student"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:scrollbars="vertical"
+                />
+
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/add_student_by_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/colorAccent"
+            android:src="@android:drawable/ic_input_add" />
+    </FrameLayout>
+</LinearLayout>

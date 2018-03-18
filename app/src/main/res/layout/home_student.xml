@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg5"
+    android:orientation="vertical"
+    class="com.archives.student.Home_student"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_h"
+        android:id="@+id/toolBar"
+        android:background="@color/colorPrimary">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="39dp"
+            android:layout_height="35dp"
+            android:background="@drawable/home"
+         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_text_button"
+            android:text="home student"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="18dp"
+                android:id="@+id/logout"
+                android:padding="10dp"
+
+                android:background="@android:drawable/ic_lock_power_off" />
+        </RelativeLayout>
+
+    </Toolbar>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mini_logo_size"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/logo" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        >
+
+        <Button
+            android:id="@+id/project_btn_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+
+            android:background="@color/colorStart"
+            android:fontFamily="casual"
+            android:text="project and ideas"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_text_view_big"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/reports_btn_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorStart"
+            android:fontFamily="casual"
+            android:text="reports  "
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_text_view_big"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/alert_btn_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorStart"
+            android:fontFamily="casual"
+            android:text="alearts "
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_text_view_big"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/files_btn_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+
+            android:background="@color/colorStart"
+            android:fontFamily="casual"
+            android:text="help file "
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_text_view_big"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

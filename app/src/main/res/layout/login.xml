@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    class = "com.archives.Login"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:windowSoftInputMode="stateHidden">
+
+        <TextView
+            android:id="@+id/wellcom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:shadowColor="@color/colorPrimary"
+            android:text="Wellcome in archive projects application"
+            android:textColor="@color/white"
+            android:fontFamily="cursive"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/logo_size"
+            android:layout_below="@id/wellcom"
+            android:layout_height="@dimen/mini_logo_size"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin"
+            app:srcCompat="@drawable/logo" />
+
+
+
+        <LinearLayout
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_margin="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin_sms"
+            android:layout_marginRight="@dimen/margin_sms"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_h"
+                android:background="@color/background">
+
+                <EditText
+                    android:id="@+id/usen_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:hint=" number student or email"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_size_text_view_big"
+                    android:textStyle="bold"></EditText>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_h"
+                android:layout_marginTop="15dp"
+                android:background="@color/background">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_size_text_view_big"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/show_pass"
+                    android:layout_width="@dimen/show_password_img"
+                    android:layout_height="@dimen/show_password_img"
+                    android:layout_gravity="left|center"
+                    android:background="@drawable/show_pass" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatButton
+
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_h"
+                android:fontFamily="casual"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/login_background"
+                android:text="Login"
+                android:shadowColor="@color/white"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_text_view_big" />
+
+            <TextView
+                android:id="@+id/signup1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+
+                android:fontFamily="casual"
+                android:text="Signup as admin"
+                android:textColor="@color/white"
+                android:textIsSelectable="true"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

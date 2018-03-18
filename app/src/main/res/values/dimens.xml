@@ -1,0 +1,67 @@
+<resources>
+    <dimen name="text_size_text_view_very_small">12sp</dimen>
+    <dimen name="text_size_text_view_small">15sp</dimen>
+    <dimen name="text_size_text_button">22sp</dimen>
+    <dimen name="text_size_text_view_big">18sp</dimen>
+    <dimen name="very_big_text">20sp</dimen>
+
+    <dimen name="mini_logo_size">160dp</dimen>
+    <dimen name="logo_size">250dp</dimen>
+    <dimen name="logo_width">300dp</dimen>
+    <dimen name="x_menu">400dp</dimen>
+    <dimen name="y_menu">400dp</dimen>
+    <dimen name="layout_h">50dp</dimen>
+    <dimen name="layout_w">300dp</dimen>
+    <dimen name="show_password_img">30dp</dimen>
+    <dimen name="back">20dp</dimen>
+    <dimen name="icon_setting">40dp</dimen>
+    <dimen name="image_size">30dp</dimen>
+    <dimen name="image_size_group">100dp</dimen>
+
+    <dimen name="padding">10dp</dimen>
+    <dimen name="margin">20dp</dimen>
+    <dimen name="margin_sms">30dp</dimen>
+<dimen name="button_size">100dp</dimen>
+    <dimen name="floatting">60dp</dimen>
+    <dimen name="tab">60dp</dimen>
+    <dimen name="card_margin">2dp</dimen>
+    <dimen name="marginbuttom_tab">64dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--<dimen name="activity_horizontal_margin">16dp</dimen>-->
+    <!--<dimen name="activity_vertical_margin">16dp</dimen>-->
+    <!--<dimen name="tab_max_width">264dp</dimen>-->
+    <!--<dimen name="tab_padding_bottom">16dp</dimen>-->
+    <!--<dimen name="tab_label">14sp</dimen>-->
+    <!--<dimen name="mini">14sp</dimen>-->
+    <!--<dimen name="big">20sp</dimen>-->
+    <!--<dimen name="size_toolbar">50dp</dimen>-->
+    <!--<dimen name="custom_tab_layout_height">72dp</dimen>-->
+    <!--<dimen name="text_size_text_view">16sp</dimen>-->
+    <!--<dimen name="button">18sp</dimen>-->
+    <!--<dimen name="text_about_big">18sp</dimen>-->
+      <!--&lt;!&ndash;text size  &ndash;&gt;-->
+    <!--<dimen name="mini_logo_size">140dp</dimen>-->
+    <!--<dimen name="x_menu">400dp</dimen>-->
+    <!--<dimen name="y_menu">400dp</dimen>-->
+    <!--<dimen name="tab">50dp</dimen>-->
+    <dimen name="contact_img">50dp</dimen>
+    <!---->
+
+
+
+    <!--<dimen name="fab_margin">16dp</dimen>-->
+    <!--<dimen name="item_offset">10dp</dimen>-->
+    <!--<dimen name="detail_backdrop_height">250dp</dimen>-->
+    <!--<dimen name="backdrop_title">30dp</dimen>-->
+    <!--<dimen name="backdrop_subtitle">18dp</dimen>-->
+
+    <!--<dimen name="card_album_radius">0dp</dimen>-->
+    <!--<dimen name="album_cover_height">110dp</dimen>-->
+    <!--<dimen name="album_title_padding">10dp</dimen>-->
+    <!--<dimen name="album_title">15dp</dimen>-->
+    <!--<dimen name="songs_count_padding_bottom">5dp</dimen>-->
+    <!--<dimen name="songs_count">12dp</dimen>-->
+    <!--<dimen name="ic_album_overflow_width">40dp</dimen>-->
+    <!--<dimen name="ic_album_overflow_height">40dp</dimen>-->
+    <!--<dimen name="ic_album_overflow_margin_top">10dp</dimen>-->
+</resources>

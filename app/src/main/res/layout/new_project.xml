@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg5"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_h"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:src="?android:attr/homeAsUpIndicator" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_text_button"
+            android:text="new project "
+            android:gravity="center"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"/>
+
+
+    </Toolbar>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/newProjectName"
+        android:layout_height="50dp"
+        android:hint="project name"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColorHint="@color/colorStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="10dp"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_margin="10dp"
+        android:maxLines="9"
+        android:nestedScrollingEnabled="true"
+        android:textColorHint="@color/colorStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="project details "
+        android:gravity="top"
+
+        android:id="@+id/details"
+        android:fontFamily="casual"
+        android:scrollbars="vertical"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="referances"
+        android:maxLines="9"
+        android:nestedScrollingEnabled="true"
+        android:gravity="top"
+        android:textColorHint="@color/colorStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/referanc"
+        android:fontFamily="casual"
+        android:scrollbars="vertical"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:background="@color/colorStart"
+        android:text="create"
+        android:id="@+id/create"
+        android:textSize="@dimen/text_size_text_view_big"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="casual"/>
+</LinearLayout>
+</ScrollView>
