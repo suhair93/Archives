@@ -101,22 +101,17 @@ public class Signup extends AppCompatActivity {
                     // الرسالة التى تظهر للمستخدم
                     Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
                     return;
-                }
+                }else
 
                 if (TextUtils.isEmpty(password)) {
                     Toast.makeText(getApplicationContext(), "Enter password!", Toast.LENGTH_SHORT).show();
                     return;
-                }
-                // شرط ان لا يكون الباسورد اقل من 6 ارقام او حروف
-                if (password.length() < 6) {
-                    Toast.makeText(getApplicationContext(), "Password too short, enter minimum 6 characters!", Toast.LENGTH_SHORT).show();
-                    return;
+                }else
 
-                }
                 if(!password.equals(rewrite_password.getText().toString())){
                     Toast.makeText(getApplicationContext(), "Password is not identical", Toast.LENGTH_SHORT).show();
 
-                }
+                }else
                 // ظهور علامة التحميل
                 dialog.show();
 // هذه الدالة خاصه بالبحث في الفيربيس للتأكد من ان الايميل الذي تم ادخاله غير موجود بالداتا بيس
@@ -137,6 +132,7 @@ public class Signup extends AppCompatActivity {
                             user.setId(email);
                             user.setPassword(password);
                             user.setTypeUser(typeuser);
+                            user.setToken("");
                             // حفظه ك اوبجكت في جدول اليوزر بالفيربيس
                             ref.child("user").push().setValue(user);
                             // رسالة عند الانتهاء

@@ -102,18 +102,18 @@
         android:textSize="@dimen/text_size_text_view_small" />
 
     <Button
-        android:layout_width="match_parent"
         android:id="@+id/signup"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent1"
-        android:layout_marginRight="50dp"
-        android:fontFamily="casual"
         android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="@dimen/layout_h"
+        android:background="@color/colorAccent1"
+        android:fontFamily="casual"
         android:text="SignUp"
-        android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="@dimen/text_size_text_button"
-        android:layout_marginTop="@dimen/layout_h"/>
+        android:textStyle="bold" />
 
 </LinearLayout>
 </ScrollView>

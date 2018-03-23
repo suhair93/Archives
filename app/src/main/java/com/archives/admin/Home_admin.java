@@ -21,9 +21,10 @@ import static java.lang.System.exit;
  */
 
 public class Home_admin  extends AppCompatActivity {
+    // تعريف العتصاصر
     Button manage_student_account, manage_supervisor_account, manage_notifcation,send_important_files;
-
     ImageView logout;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // ربط هذه الكلاس بالواجهة ليتم التعرف ع العناصر
@@ -38,12 +39,14 @@ public class Home_admin  extends AppCompatActivity {
             window1.setStatusBarColor(getResources().getColor(R.color.colorPrimary));
         }
 
+        // ربط العناصر بالواجهات
        manage_student_account = (Button) findViewById(R.id.student);
         manage_supervisor_account = (Button)findViewById(R.id.supervisor);
         manage_notifcation = (Button)findViewById(R.id.notification);
         send_important_files = (Button)findViewById(R.id.files);
         logout =(ImageView)findViewById(R.id.logout);
 
+        // عند الضغط علة ايقوم تسجيل الخروج
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,15 +54,18 @@ public class Home_admin  extends AppCompatActivity {
             }
         });
 
+        // زر ادارة جسابات الطلاب
         manage_student_account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // انتقال اللي واجهة ادارة الحسابات
                 Intent i = new Intent(Home_admin.this, manage_students.class);
                 startActivity(i);
 
             }
         });
 
+        // زر ادارة حسابات المشرفين
         manage_supervisor_account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,6 +74,7 @@ public class Home_admin  extends AppCompatActivity {
 
             }
         });
+        // زر ادارة التبيهات للطلاب
         manage_notifcation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,6 +83,8 @@ public class Home_admin  extends AppCompatActivity {
 
             }
         });
+
+        //زي ارسال الملفات المهمة 
         send_important_files.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
