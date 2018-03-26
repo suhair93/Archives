@@ -32,6 +32,9 @@ public class Splash extends AppCompatActivity {
             window1.setStatusBarColor(getResources().getColor(R.color.colorPrimaryDark));
     }
 
+
+
+
         //****************************//
        // هنا يتم ربط العناصر بالواجهة من خلال ال id الخاص بكل عنصر
         logo = findViewById(R.id.logo);
